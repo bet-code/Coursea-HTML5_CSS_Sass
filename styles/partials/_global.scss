@@ -1,0 +1,48 @@
+/* ===== GLOBAL =====*/
+
+//  ===== GENERAL =====
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 75%;
+    margin: 0 auto;
+    height: 100%;
+    @media (max-width: 940px) {
+        width: 85%;
+    }
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+    @media (max-width: 680px) {
+        width: 95%;
+    }
+}
+
+.innerWrapper {
+    @extend .wrapper;
+        width: 65%;    
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexRight {
+    justify-content: flex-end;
+}
+.flexBetween {
+    justify-content: space-between;
+}
+
+
+
+

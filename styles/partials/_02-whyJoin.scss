@@ -1,0 +1,57 @@
+/* ===== WHY JOIN ===== */
+
+.whyJoin {
+    text-align: center;
+    margin: 0 auto;
+    h2 {
+        @include fontStyle (4.8rem, $secondaryColourText); 
+        padding-top: 40px;
+        } 
+        @media (max-width: 940px) {
+            font-size: 3rem;
+        }
+    p {
+        width: 40%;
+        margin: 0 auto;
+        @include fontStyle (1.7rem, $primaryColourText);
+        @media (max-width: 940px) {
+            width: 60%;
+        }
+    }
+}
+
+// ===== Course Highlight =====
+
+.courseHighlight {
+    ul {       
+        list-style: none;
+        margin-top: 80px;
+        @media (max-width: 940px) {
+            margin-top: 60px;
+        }
+        li {
+            width: calc(25% - 20px);
+            text-align: center;
+            @media (max-width: 940px) {
+                width: calc(50% - 20px);
+            }
+            @media (max-width: 768px) {
+                width: calc(50% - 10px;
+            }
+            h4 {
+                @include fontStyle (22px, $secondaryColourText);
+                @media (max-width: 940px) {
+                    margin: 10px 0;
+                }
+            }
+            p {
+                @include fontStyle (16px, $primaryColourText);
+                line-height: 1.6;
+                margin-bottom: 80px;
+                @media (max-width: 940px) {
+                    margin-bottom: 60px;
+                }
+            }
+        }
+    }
+}

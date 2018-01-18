@@ -1,0 +1,253 @@
+/* ====== FOOTER ======*/
+
+.footerTop {
+    border-bottom: .5px solid $primaryColourText;
+    img {
+        padding-top: 80px;
+        @media (max-width: 940px) {
+            padding-top: 40px;
+        }        
+    }
+    text-align: center;
+    background: $primaryColourBg;
+    h2 {
+        @include fontStyle (3.6rem, $primaryColourText);
+        color: lighten($primaryColourText, 10);
+        font-weight: 200;
+        text-transform: none;
+        @media (max-width: 840px) {
+            font-size: 3rem;
+        }
+        @media (max-width: 650px) {
+            font-size: 2.5rem;
+        }
+    }
+    form {
+        input {
+            @include fontStyle (1.4rem, $primaryColourText);
+            margin-bottom: 80px;
+            padding: 14px;
+            @media (max-width: 940px) {
+                margin-bottom: 40px;
+            } 
+        }
+        input[type='email'] {
+            width: 400px;
+            margin-right: 20px;
+            background: $overlayColour2;
+            border: none;
+            outline: none;
+            @media (max-width: 680px) {
+                width: 250px;
+                margin-right: 10px;
+            }
+            &:hover,
+            &:focus {
+                color: $accentColour4;
+                background: $overlayColour2;
+            }
+        }
+        input[type='submit'] {
+            @include fontStyle (1.8rem, $highlightColour);
+            border: 1px solid $highlightColour;
+            background: transparent;
+            padding: 10px 40px;
+            border-radius: 5px;
+            transition: color .3s ease, border-color .3s ease;
+            @media (max-width: 680px) {
+                ;
+            }
+            &:hover {
+                color: $accentColour4;
+                border-color: $accentColour4;
+            }
+        }
+    }
+}
+
+.footerMain {
+    background:  $primaryColourBg;
+    .logoBar {
+        display: inline-block;
+        img {
+            margin: 40px 20px 20px 0;
+            @media (max-width: 940px) {
+                margin: 40px 10px 40px 0;
+            }
+        }
+    }
+}
+
+.siteList {
+    div {
+        width: calc(25% - 20px);
+        margin-right: 20px;
+        @media (max-width: 768px) {
+            width: calc(33.33% - 20px);
+        }
+        @media (max-width: 625px) {
+            width: calc(50% - 20px);
+            text-align: center;
+        }
+        h5{
+            font-size: 1.6rem;
+            @media (max-width: 940px) {
+                margin-top: 0;
+            }
+        }
+        p {
+            @include fontStyle (1.4rem, $primaryColourText);
+        }
+        ul {
+            list-style: none;
+            a {
+                @include fontStyle (1.4rem, $primaryColourText);
+                text-decoration: none;
+                transition: color .3s ease;
+            }
+        }
+    }
+}
+
+div.aboutUs {
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 30px;
+}
+    h5 {
+        color: $accentColour3;
+    }
+    p {
+        line-height: 1.5;
+    }
+}
+
+.recentCourses,
+.recentTutorial {
+    li {
+        padding: 20px 0;
+        border-bottom: .5px solid $primaryColourText;
+        &:first-of-type {
+            padding-top: 0;
+        }
+        &:last-of-type {
+            border-bottom: none;
+        }        
+    }
+}
+
+.recentCourses {
+    h5 {
+        color: $accentColour2;
+    }
+    a:hover {
+        color: $accentColour2;
+    }    
+}
+
+div.recentTutorial {
+    h5 {
+        color: $accentColour4;
+    }
+    a:hover {
+        color: $accentColour4;
+    }  
+}
+
+div.contactOption {
+    @media (max-width: 625px) {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    h5 {
+        color: $accentColour2;
+    }
+    li {
+        display: flex;
+        @media (max-width: 625px) {
+            justify-content: center;
+        }
+    }
+    p {
+        margin: 0 0 20px 0;
+    }
+    i {
+        @include fontStyle (1.4rem, $primaryColourText);
+        margin-right: 20px;
+    }
+}
+
+.contactSocial {
+    h5 {
+        color: $accentColour4;
+    }
+    .contactOptionSocial {
+        @media (max-width: 625px) {
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.contactSocial {
+    li {
+        margin-right: 5px;
+        a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: transparent;
+            position: relative;
+            transition: background .3s ease;
+            &:hover {
+                background: $accentColour2;
+            }
+            &:hover i {
+                color: $highlightColour;
+            }
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: color .3s ease;
+            }
+        }
+
+    }
+}
+
+// ====== footer bottom bar 
+
+.footerBottom {
+    background: $thirdColourBg;
+    color: $primaryColourText;
+    p {
+        width: 33.33%;
+    }
+    a {
+        color: lighten($primaryColourText, 20);
+        background: $primaryColourText;
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        position: relative;
+        border-radius: 50%;
+        transition: background .3s ease;
+        &:hover {
+            background: $accentColour1;
+        }
+        &:hover i {
+            color: $accentColour3;
+        }
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: color .3s ease;
+        }
+    }
+}

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:200,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Coursea</title>
+</head>
+<body>
+    <header class="mainHeader">
+        <nav class="mainNav">
+            <div class="topNavBar">
+                <div class="wrapper flex">
+                    <div class="companyLogo flex">
+                        <img src="images/logoSml.png" alt="Company logo" class="logoSml">
+                        <img src="images/companyName.png" alt="Company names" class="logoSml">
+                    </div> 
+                    <form action="POST" class="siteSearch flex">
+                        <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                        <input type="text" placeholder="Search">
+                    </form>
+                </div>
+            </div>
+            <div class="slideOutNav">                 <!-- slideout nav - initialized at media query -->
+                <input type="checkbox" id="toggleMenu" />
+                <label for="toggleMenu" class="menuOpen">&#9776;</label>
+                <label for="toggleMenu" class="menuClose">&#9747;</label>
+                <!-- <label for="toggleMenu" class="menuClose">&#9747;</label> -->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Price Plans</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="">Sign up</a></li>
+                    <li><a href="">Sign in</a></li>
+                </ul>
+             </div> <!--slideout nav ends -->
+            <div class="navLinks">
+                <div class="mainNavLinks wrapper flex flexBetween">
+                    <ul class="navLinksLeft flex">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Price Plans</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                    <ul class="navLinksRight flex flexRight">
+                        <li><a href="">Sign up</a></li>
+                        <li><a href="">Sign in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="wrapper flex">
+                <div class="heroText">
+                    <h1>Learn creative skills shape your future</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt deserunt, nisi, rem optio culpa eligendi, ad facere odit alias quis velit. Facilis voluptate eligendi iste numquam. Incidunt quasi quia aliquam.</p>
+                </div>
+                <ul class="directionSelector">
+                    <li class="leftArrow">
+                        <a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="rightArrow">
+                        <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+    <section class="whyJoin">
+        <h2>Why Join Coursea</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias nesciunt unde consequatur nihil repellat, placeat laborum veniam ratione tempore voluptate!</p>
+    </section>
+    <section class="courseHighlight">
+        <div class="wrapper">
+            <ul class="flex flexBetween">
+                <li class="highlightItem">
+                    <img src="images/highlight_01.png" alt="Two head facing each other icon symbolizing teacher passing knowledge to a student">
+                    <h4>Expert Teachers</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore quas iste modi, architecto tempora ipsa Lorem ipsum dolor sit amet</p>
+                </li>
+                <li class="highlightItem">
+                    <img src="images/highlight_02.png" alt="Book icon symbol">
+                    <h4>+500 Lessons</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore quas iste modi, architecto tempora ipsa Lorem ipsum dolor sit amet</p>
+                </li>
+                <li class="highlightItem">
+                    <img src="images/highlight_03.png" alt="Certificate icon symbolizing well recognized accreditation ">
+                    <h4>Trusted certifications</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore quas iste modi, architecto tempora ipsa Lorem ipsum dolor sit amet</p>
+                </li>
+                <li class="highlightItem">
+                    <img src="images/highlight_04.png" alt="Play video icon symbolizing video lessons">
+                    <h4>+1,200 Video lessons</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore quas iste modi, architecto tempora ipsa Lorem ipsum dolor sit amet</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="banner">
+        <p>Commited to learning new creative skills?</p>
+        <p>Subscribe to <span>Coursea</span> today!</p>
+        <a href="#">Subscribe</a>
+    </section>
+    <section class="latestCourses sectionTitle">
+        <h2>Latest courses</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum soluta mollitia sint itaque quidem ipsum dicta? Voluptatem tempora praesentium sint!</p>
+        <div class="itemSearch">
+            <a href="#">Browse all Corses<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+        </div>
+    </section>
+    <section class="latestCourseList wrapper">
+        <ul class="courseList listArticles flex flexBetween">
+            <li>
+                <img src="images/courses_01.png" alt="3 little pigs book">
+                <div class="itemInfo">
+                    <h5>Photo and Video</h5>
+                    <p >Setting Up Your Mac for Photo and Video</p>
+                    <p class="datePosted">24 Mar 2015 - 2 Hours</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/courses_02.png" alt="Person looking at a website ono a tablet on their lap">
+                <div class="itemInfo">
+                    <h5>Web Design</h5>
+                    <p>Responsive Web Design Revisited</p>
+                    <p class="datePosted">12 Mar 2015 - 5 Hours</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/courses_03.png" alt="Cartoon image of a building">
+                <div class="itemInfo">
+                    <h5>Code</h5>
+                    <p>Game Developer With Swift and SpriteKit</p>
+                    <p class="datePosted">3 Apr 2015 - 2 Hours</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/courses_04.png" alt="Cartoon image of a notebook">
+                <div class="itemInfo">
+                    <h5>Music & Audio</h5>
+                    <p>Audio Production for Interviews</p>
+                    <p class="datePosted">24 Mar 2015 - 2 Hours</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/courses_05.png" alt="old cardboard 3D glasses">
+                <div class="itemInfo">
+                    <h5>3d & Motion Graphics</h5>
+                    <p>Getting Started with Adobe SpeedGrade</p>
+                    <p class="datePosted">5 Nov 2015 - 45 Hours</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/courses_06.png" alt="old cardboard 3D glasses">
+                <div class="itemInfo">
+                    <h5>3d & Motion Graphics</h5>
+                    <p>Getting Started with Adobe SpeedGrade</p>
+                    <p class="datePosted">5 Nov 2015 - 45 Hours</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/courses_07.png" alt="old cardboard 3D glasses">
+                <div class="itemInfo">
+                    <h5>3d & Motion Graphics</h5>
+                    <p>Getting Started with Adobe SpeedGrade</p>
+                    <p class="datePosted">5 Nov 2015 - 45 Hours</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/courses_08.png" alt="old cardboard 3D glasses">
+                <div class="itemInfo">
+                    <h5>3d & Motion Graphics</h5>
+                    <p>Getting Started with Adobe SpeedGrade</p>
+                    <p class="datePosted">5 Nov 2015 - 45 Hours</p>
+                </div>
+            </li>
+        </ul>
+    </section>  
+    <section class="courseSearch">
+        <h3>Search for courses</h3>
+        <p>Fill keywords to seek courses</p>
+        <form action="POST">                
+            <select name="courseCategory">
+                <option value="Category">Category 01</option>
+                <option value="Category">Cat2</option>
+                <option value="Category">Cat3</option>
+            </select>
+            <select name="courseType">
+                <option value="Category">Course1</option>
+                <option value="Category">Course2</option>
+                <option value="Category">Course3</option>
+            </select>
+            <input type="text" placeholder="Keywords">
+            <input type="submit"value="SEARCH">
+        </form>
+    </section>
+    <section class="latestTutorials sectionTitle">
+        <h2>Latest tutrotials</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum soluta mollitia sint itaque quidem ipsum dicta? Voluptatem tempora praesentium sint!</p>
+        <div class="itemSearch">
+            <a href="#">Browse all Corses<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+        </div>
+    </section>
+    <section class="tutorialList wrapper">
+        <ul class="courseList listArticles flex flexBetween">
+            <li>
+                <img src="images/tutorial_01.png" alt="3 little pigs book">
+                <div class="itemInfo">
+                    <h5>Photo and Video</h5>
+                    <p >Setting Up Your Mac for Photo and Video</p>
+                    <p class="datePosted">24 Mar 2015 - 2 Hours</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/tutorial_02.png" alt="Person looking at a website ono a tablet on their lap">
+                <div class="itemInfo">
+                    <h5>Web Design</h5>
+                    <p>Responsive Web Design Revisited</p>
+                    <p class="datePosted">12 Mar 2015 - 5 Hours</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/tutorial_03.png" alt="Cartoon image of a building">
+                <div class="itemInfo">
+                    <h5>Code</h5>
+                    <p>Game Developer With Swift and SpriteKit</p>
+                    <p class="datePosted">3 Apr 2015 - 2 Hours</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/tutorial_04.png" alt="Cartoon image of a notebook">
+                <div class="itemInfo">
+                    <h5>Music & Audio</h5>
+                    <p>Audio Production for Interviews</p>
+                    <p class="datePosted">24 Mar 2015 - 2 Hours</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/tutorial_05.png" alt="old cardboard 3D glasses">
+                <div class="itemInfo">
+                    <h5>3d & Motion Graphics</h5>
+                    <p>Getting Started with Adobe SpeedGrade</p>
+                    <p class="datePosted">5 Nov 2015 - 45 Hours</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/tutorial_06.png" alt="old cardboard 3D glasses">
+                <div class="itemInfo">
+                    <h5>3d & Motion Graphics</h5>
+                    <p>Getting Started with Adobe SpeedGrade</p>
+                    <p class="datePosted">5 Nov 2015 - 45 Hours</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/tutorial_07.png" alt="old cardboard 3D glasses">
+                <div class="itemInfo">
+                    <h5>3d & Motion Graphics</h5>
+                    <p>Getting Started with Adobe SpeedGrade</p>
+                    <p class="datePosted">5 Nov 2015 - 45 Hours</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/tutorial_08.png" alt="old cardboard 3D glasses">
+                <div class="itemInfo">
+                    <h5>3d & Motion Graphics</h5>
+                    <p>Getting Started with Adobe SpeedGrade</p>
+                    <p class="datePosted">5 Nov 2015 - 45 Hours</p>
+                </div>
+            </li>
+        </ul> 
+    </section>
+    <section class="testimonials sectionTitle">
+        <h2>What students say</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aliquid eligendi est perspiciatis debitis unde aperiam sequi voluptatibus ipsa labore.</p>
+        <div class="itemSearch">
+            <a href="#">Send a request <span><i></i></span></a>
+        </div>
+    </section>
+    <section class="testimonialList">
+        <div class="wrapper">
+            <ul class="studentTestimonialList flex flexBetween">
+               <li>
+                   <img src="images/person_01.png" alt="">
+                   <div class="studentTestimonial">
+                       <h5>Lora Palmer</h5>
+                       <p class="occupation">Web Designer</p>
+                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, quasi! Fugit deserunt quasi ullam quidem.</p>
+                   </div>
+               </li>
+               <li>
+                   <img src="images/person_02.png" alt="">
+                   <div class="studentTestimonial">
+                   <h5>Lora Palmer</h5>
+                   <p class="occupation">Web Designer</p>
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, quasi! Fugit deserunt quasi ullam quidem.</p>
+                   </div>
+               </li> 
+               <li>
+                   <img src="images/person_03.png" alt="">
+                   <div class="studentTestimonial">
+                   <h5>Julie Pedersen</h5>
+                   <p class="occupation">Web Designer</p>
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, quasi! Fugit deserunt quasi ullam quidem.</p>
+                   </div>
+               </li>
+               <li>
+                   <img src="images/person_04.png" alt="">
+                   <div class="studentTestimonial">
+                   <h5>Maria Smith</h5>
+                   <p class="occupation">Web Designer</p>
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, quasi! Fugit deserunt quasi ullam quidem.</p>
+                   </div>
+               </li>
+           </ul>
+        </div>
+    </section>
+    <footer>
+        <section class="footerTop">
+            <img src="images/logoLrg.png" alt="" class="logoLrg">
+            <h2>Subscribe to our Newsletter for latest news</h2>
+            <form action="" class="subscribe">
+                <input type="email" placeholder="Your Email">
+                <input type="submit" value="SUBSCRIBE">
+            </form>
+        </section>
+        <section class="footerMain">
+            <div class="wrapper">
+                <section class="logoBar">
+                    <img src="images/logoSml.png" alt="Company Logo" class="logoSml">
+                    <img src="images/companyName.png" alt="">
+                </section>
+                <section class="siteList flex flexBetween">
+                    <div class="aboutUs">
+                        <h5>About Us</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore tempora repellendus non? Magnam, qui alias. Quas, provident molestias. Consequatur suscipit vel eveniet commodi aperiam quos recusandae magnam dolor, perferendis nam!</p>
+                    </div>
+                    <div class="recentCourses">
+                        <h5>Recent Courses</h5>
+                        <ul>
+                            <li>
+                                <a href="#">How to create a Desk Scenery Illustration using Adobe Illustrator</a>
+                            </li>
+                            <li>
+                                <a href="#">Freelance Bootcamp</a>
+                            </li>
+                            <li>
+                                <a href="#">Gettng started with photos for OS</a>
+                            </li>
+                            <li>
+                                <a href="#">Getting started with Adobe Speedgrade</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="recentTutorial">
+                        <h5>Recent Tutorials</h5>
+                        <ul class="linkRecentTutorials">
+                            <li><a href="#">A Freelancer's guide to effective budgeting</a></li>
+                            <li><a href="#">Make a wooden word cake topper</a></li>
+                            <li><a href="#">The art of voice recording</a></li>
+                        </ul>
+                    </div>
+                    <div class="contactOption">
+                        <h5>Contacts</h5>
+                        <ul class="contactOptionList">
+                            <li>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                    <p>11 Fith Ave, Zaporihzhya, UA</p> 
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <p><span>+</span>1-202-555-0185</p>
+                            </li>                    
+                            <li>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <p>submissions@domain.com</p>
+                            </li>
+                        </ul>
+                        <section class="contactSocial">
+                        <h5>Follow Us</h5>
+                        <ul class="contactOptionSocial flex">
+                            <li>
+                                <a><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                        </section>
+                    </div>
+                </section>
+            </section>
+            <section class="footerBottom">
+                <div class="wrapper flex flexBetween">
+                    <p>Theme By BESTWEBSOFT</p>
+                    <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+                    <p>Copywright &copy; All Right Reserved - BESTWEBSOFT</p>
+                </div>
+            </section>
+        </div>
+    </footer>
+    </main>
+</body>
+</html>

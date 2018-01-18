@@ -1,0 +1,93 @@
+/*===== LATEST COURSES  PAGES=====*/
+.sectionTitle {
+    text-align: center;
+    h2 {
+        @include fontStyle (4.8rem, $secondaryColourText);
+        @media (max-width: 640px) {
+            font-size: 4rem;
+        }     
+        @media (max-width: 480px) {
+            font-size: 3.5rem;
+        }
+    }
+    p {
+        width: 45%;
+        margin: 40px auto;
+        @include fontStyle (1.7rem, $primaryColourText);
+        @media (max-width: 768px) {
+            width: 70%;
+        }        
+    }
+}
+
+.itemSearch {
+    a {
+        @include fontStyle (1.8rem, $accentColour1);
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: color .3s ease;
+        &:hover {
+            color: $accentColour3;
+        }
+        span {
+            padding-left: 5px;
+        }
+    }
+}
+
+.listArticles {
+    list-style: none;
+    margin-top: 80px;
+    @media (max-width: 940px) {
+        margin: 40px 0;
+    }
+    li {
+        display: flex;
+        flex-direction: column;
+        width: calc(25% - 10px);       
+        margin-bottom: 30px;
+        box-shadow: 0px 0px 1px $primaryColourText;
+        transition: box-shadow .5s ease; 
+        @media (max-width: 940px) {
+            width: calc(25% - 10px);
+        }       
+        @media (max-width: 840px) {
+            width: 100%;           
+            margin: 10px auto;
+            margin-bottom: 10px;
+            flex-direction: row;
+            &:nth-of-type(odd) {
+                flex-direction: row-reverse;
+            }
+            &:nth-of-type(odd)  div.itemInfo {
+                text-align: right;
+            }
+        }
+        &:hover {
+            box-shadow: 0 1px 3px $primaryColourText, 0 3px 6px;
+        }
+        img {
+            width: 100%;
+            object-fit: cover;
+            @media (max-width: 840px) {
+                width: 50%;
+            }
+        }
+        .itemInfo {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+            
+            h5 {
+                @include fontStyle (1.4rem, $secondaryColourText);
+                text-transform: uppercase;
+                color: $accentColour2;
+            }
+            p {
+                @include fontStyle (16px, $primaryColourText);
+                margin: 10px 0;
+            }
+        }
+    }
+}
+

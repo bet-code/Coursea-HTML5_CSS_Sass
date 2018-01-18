@@ -1,0 +1,107 @@
+/*===== TESTIMONIALS =====*/
+section.testimonailList {
+    .wrapper {
+        @media (max-width: 940px) {
+            width: 85%;
+        }
+    }
+}
+
+.studentTestimonialList {
+    margin: 40px 0;
+    @media (max-width: 940px) {
+        margin: 20px 0;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(50% - 20px/2);
+        margin-bottom: 20px;
+        padding: 0;
+        border: 3px dotted $accentColour1;
+        box-shadow:  0 0 0 $accentColour1;
+        transition: box-shadow .3s ease;        
+        // &:nth-of-type(odd) {
+        //     flex-direction: row-reverse;
+        // }
+        @media (max-width: 768px) {
+            width: calc(50% - 10px/2);
+            margin-bottom: 10px;
+        }
+        @media (max-width: 625px) {
+            width: 100%;
+            text-align: center;
+            &:nth-of-type(odd) {
+                flex-direction: row-reverse;
+            }
+        }
+        &:hover {
+            border: 3px solid transparent;
+            box-shadow: 0 2px 3px $accentColour1, 0 2px 10px $accentColour1;
+        }        
+        &:nth-of-type(2) {
+            border-color: $accentColour2;
+            h5 {
+                color: $accentColour2;
+            }
+            &:hover {
+                border: 3px solid transparent;
+                box-shadow: 0 2px 3px $accentColour2, 0 2px 8px $accentColour2;
+            }
+        }
+        &:nth-of-type(3) {
+            border-color: $accentColour3;
+            h5 {
+                color: $accentColour3;
+            }
+            &:hover {
+                border: 3px solid transparent;
+                box-shadow: 0 2px 3px $accentColour3, 0 2px 8px $accentColour3;
+            }
+        }   
+        &:nth-of-type(4) {
+            border-color: $accentColour4;
+            h5 {
+                color: $accentColour2;
+            }
+            &:hover {
+                border: 3px solid transparent;
+                box-shadow: 0 2px 3px $accentColour4, 0 2px 8px $accentColour4;
+            }
+        }        
+        img {
+            width: 30%;
+            padding: 5px;
+            @media (max-width: 768px) {
+                width: 30%;
+            }
+        }
+        div.studentTestimonial {
+            width: 70%;
+            padding: 10px;
+            }
+            @media (max-width: 799px) {
+                padding: 10px;
+            }
+            @media (max-width: 625px) {
+                padding: 0;
+                margin: 10px auto;
+            }
+            h5 {
+                @include fontStyle (2.2rem, $accentColour1);
+                margin: 10px 0;
+            }
+            p {
+                font-size: 1.6rem;
+            }
+        }
+        .occupation {
+            @include fontStyle (1.4rem, $primaryColourText);
+            @media (max-width: 625px) {
+                text-align: center;
+            }
+        }        
+    
+}
+

@@ -1,0 +1,109 @@
+/*===== SLIDE OUT NAV =====*/
+.slideOutNav {
+    display: none;
+    @media (max-width: 940px) {
+      display: block;
+    }
+    ul {
+        z-index: 5;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 40%;
+    background: $fourthColourBg;
+    position: fixed;
+    top: 0;
+    right: -40%;
+    box-shadow: -3px 1px 8px $overlayColour;
+    transition: right .3s ease;
+    @media (max-width: 600px) {
+      width: 60%;
+      right: -60%;
+    }
+    li {
+      &:nth-of-type(7) {
+          margin-top: 80px;
+      }
+      a {
+      display: block;
+      color: $accentColour3;
+      padding: 20px;
+      font-size: 2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: .1px solid $accentColour1;
+      transition: color .3s ease,
+                  background .3s ease;
+      &:hover {
+          color: $accentColour2;
+      }
+    }
+  }
+}
+  
+  label[for="toggleMenu"] {
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: $secondaryColourText;
+    background: lighten($accentColour1, 10);
+    border-radius: 50%;
+    box-shadow: -1px 1px 3px $thirdColourBg;
+    position: fixed;
+    top: 16px;
+    right: 40px;
+    cursor: pointer;
+    transition: color .3s, right .3s, background .3s ease;
+    @media (max-width: 769px) {
+        right: 30px;
+    }   
+    @media (max-width: 680px) {
+      right: 20px;
+    } 
+    &:hover,
+    &:active {
+      color: $accentColour3;
+    }
+  }
+}
+
+label.menuOpen {
+  z-index: 10;
+  opacity: 1;
+  transition: opacity .3s ease;
+}
+
+label.menuClose {
+  z-index: 5;
+}
+
+
+input[type="checkbox"] {
+  display: none;
+  &:checked ~ label {
+    color: $accentColour3;
+    background: $accentColour1;
+  }
+  &:checked ~ label.menuOpen {
+    right: calc(40% - 26px);
+    opacity: 0;
+    @media (max-width: 600px) {
+      right: calc(70% - 26px);
+    }
+  }
+  &:checked ~ label.menuClose {
+    right: calc(40% + 26px);
+    @media (max-width: 600px) {
+      right: calc(70% - 26px);
+    }
+  }
+  &:checked ~ ul {
+    right: 0;
+  }
+}
+

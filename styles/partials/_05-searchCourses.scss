@@ -1,0 +1,131 @@
+/* Course Search*/
+
+.courseSearch {
+    text-align: center;
+    background: $accentColour1;
+    padding: 80px;
+    margin-top: 80px;
+    @media (max-width: 940px) {
+        margin-top: 0;
+        padding: 40px;
+    }
+    h3 {
+        @include fontStyle (4.8rem, $highlightColour);
+        text-transform: uppercase;
+        position: relative;
+        margin-top: 0;
+        @media (max-width: 940px) {
+            font-size: 4rem;
+        }
+        @media (max-width: 768px) {
+            font-size: 3.5rem;
+        }
+        @media (max-width: 680px) {
+            font-size: 3.2rem;
+        }
+        @media (max-width: 480px) {
+            font-size: 3rem;
+        }
+        &:after {
+            content: '';
+            width: 10%;
+            border-bottom: 1px solid $highlightColour;
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    p {
+        @include fontStyle (2.2rem, $highlightColour);
+        font-family: $primaryFont;
+        font-weight: bold;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+        @media (max-width: 940px) {
+            font-size: 2rem;
+        }
+        @media (max-width: 768px) {
+            font-size: 1.7rem;
+        }
+        @media (max-width: 680px) {
+            font-size: 1.5rem;
+        }
+        @media (max-width: 480px) {
+            font-size: 1.4rem;
+        }
+    }
+    form {
+        select,
+        input {
+            border-radius: 5px;
+            border: none;
+        }
+        select {            
+            @include fontStyle (1.5rem, $primaryColourText);
+            width: 20%;
+            padding: 10px;
+            margin-right: 10px;
+            position: relative;
+            // appearance: none;
+            position: relative;
+            @media (max-width: 650px) {
+                width: 40%;
+                margin: 0;
+            }
+        }
+        select[name='courseType'] {
+            width: 15%;
+            &:after {
+                content: '>';
+                width: 10px;
+                height: 10px;
+                height: 1.5rem;
+                background: blue;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            @media (max-width: 650px) {
+                width: 40%;
+            }
+        }
+        input {
+            @include fontStyle (1.5rem, $primaryColourText); 
+            width: 20%;
+            padding: 10px; 
+            margin-right: 10px;  
+            @media (max-width: 940px) {
+                margin: 5px;
+                width: 30%
+            }
+            @media (max-width: 650px) {
+                width: 80%;
+            }
+            @media (max-width: 768px) {
+                margin: 3px;
+            } 
+        }
+        input[type="submit"] {
+            width: 20%;
+            color: $highlightColour;            
+            background: transparent;
+            border: 1px solid $highlightColour;
+            transition: color .3s, border-color .3s ease;
+            @media (max-width: 940px) {
+                width: 30%;
+            }
+            @media (max-width: 650px) {
+                width: 80%;
+            }
+            &:hover {
+                color: $accentColour3;
+                border-color: $accentColour3;
+            }
+        }
+    }
+}
+
+
+

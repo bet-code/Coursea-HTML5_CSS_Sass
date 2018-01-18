@@ -1,0 +1,15 @@
+/* ===== MIXINS =====*/
+
+@mixin fontStyle ($fontSize, $fontColour) {
+    font-size: $fontSize;
+    color: $fontColour;
+}
+
+@mixin button ($fontSize, $paddingHeight, $paddingWidth) {
+    text-decoration: none;
+    font-size: $fontSize;
+    padding: $paddingHeight $paddingWidth;
+    border: 1px solid $highlightColour;
+    color: $highlightColour;
+    text-transform: uppercase;
+}

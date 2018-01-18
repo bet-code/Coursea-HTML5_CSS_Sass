@@ -1,0 +1,33 @@
+/* ==== BANNER =====*/
+
+.banner {
+    text-align: center;
+    background: $accentColour1;
+    padding: 80px;
+    @media (max-width: 940px) {
+        padding-top: 40px;
+    }
+    p {
+        @include fontStyle (30px, $highlightColour);
+        font-family: $primaryFont;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+        span {
+            @include fontStyle (4rem, $highlightColour);
+            font-weight: 200;
+        }
+    }
+    a {    
+        @include button (1.8rem, 10px, 50px);
+        border-radius: 5px;
+        position: relative;
+        top: 40px;
+        margin-bottom: 80px;
+        transition: color .3s, border-color .3s ease;
+        &:hover {
+            color: $accentColour3;
+            border-color: $accentColour3;
+        }
+    }
+}

@@ -1,0 +1,184 @@
+/* ===== MAIN HEADER ===== */
+
+.topNavBar {
+    background: $primaryColourBg;
+    border-bottom: .5px solid $overlayColour2;
+    .wrapper {
+        @media (max-width: 680px) {
+            display: block;
+        }
+        .companyLogo {
+            flex: 1;
+            .logoSml {
+                margin: 20px 20px 20px 0;
+            }
+        }    
+        .siteSearch {
+            margin: auto 0;
+            display: block;
+            position: relative;
+            @media (max-width: 940px) {
+                right: 5%;
+            }
+            @media (max-width: 768px) {
+                display:none;
+            }
+            button {
+                font-size: 1.5rem;
+                padding: 10px;
+                color: $accentColour0;
+                background: $thirdColourBg;
+                border-radius: 50px  0 0 50px;
+                border: none;
+                transition: color .3 ease;
+                outline: none;
+                &:hover i {
+                    color: $accentColour1;
+                }
+            }        
+            input[type='text'] {
+                @include fontStyle (1.5rem, $accentColour0);
+                background: $thirdColourBg;
+                padding: 10px;
+                border-radius: 0 50px 50px 0;
+                border: none;
+                outline: none;
+                &:focus {
+                    color: $accentColour1;
+                }
+            }
+        } 
+    }
+} 
+
+.navLinks {
+    background: $primaryColourBg;
+    @media (max-width: 940px) {
+        display: none;
+    }
+    li {
+        list-style: none;
+        a {
+            display: block;
+            @include fontStyle(1.5rem, $primaryColourText);
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 20px 0;
+            transition: color .3s ease;
+            &:hover {
+                color: $accentColour1;
+            }
+        }
+    }    
+}
+.navLinksLeft li {
+    margin-right: 20px;
+}
+.navLinksRight li {
+    margin-left: 20px;
+}
+
+// ===== Hero Text =====
+
+.hero {
+    height: 100vh;
+    margin: auto 0;
+    background: linear-gradient($overlayColour, $overlayColour),
+                url(../images/headerBg.jpg) bottom;
+                background-size: cover;
+        .wrapper {
+            position: relative;
+        }
+    .heroText {
+        width: 60%;
+        margin: auto 0;
+        @media (max-width: 940px) {
+            width: 70%;
+            margin: auto auto;
+        }
+        @media (max-width: 650px) {
+            margin: 100px;
+        }
+        @media (max-width: 500px) {
+            margin: 25px 50px;
+        }
+        h1 {
+            @include fontStyle(4.8rem, $highlightColour); 
+            padding-bottom: 20px;
+            position: relative;
+            @media (max-width: 940px) {
+                font-size: 4rem;
+                padding-bottom: 10px;
+            }
+            @media (max-width: 840px) {
+                font-size: 3.5rem;
+                padding-bottom: 5px;
+            }
+            @media (max-width: 650px) {
+                font-size: 3.5rem;
+            }
+            &:after {
+                content: '';
+                width: 70%;
+                height: .5px;
+                background: $overlayColour2;
+                position: absolute;
+                left: 0;
+                bottom: -20px; 
+            }
+        }
+        p {
+            @include fontStyle(1.7rem, $highlightColour);
+            padding-top: 20px;
+        }
+    }
+    .directionSelector {
+        li {
+            height: 30px;
+            width: 30px;
+            background: $overlayColour2;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: background .3s ease;
+            &:hover {
+                background: $accentColour1;
+            }
+            &:hover i {
+                color: $accentColour3;
+            }
+            i {
+                @include fontStyle (1.4rem, $highlightColour);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: color .3s ease;
+            }
+        }
+    }
+}
+
+.leftArrow {
+    left: -100px;
+    @media (max-width: 940px) {
+        left: -40px;
+    }
+    @media (max-width: 768px) {
+        left: 0px;
+    }
+}
+.rightArrow {
+    right: -100px;
+    @media (max-width: 940px) {
+        right: -40px;
+    }
+    @media (max-width: 768px) {
+        right: 0px;
+    }
+}
+
+
+
+
